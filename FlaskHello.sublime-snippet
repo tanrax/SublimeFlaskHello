@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+# -*- coding: utf-8 -*-
+# Biblioteca
+from flask import Flask${4:, render_template}
+
+# Variables
+app = Flask(__name__)
+
+# Settings
+app.config['DEBUG'] = True
+
+
+# Views
+@app.route("/"${1:, methods=('GET', 'POST')})
+def index():
+    return ${2:render_template("${3:name}.html")}
+
+
+# Run
+if __name__ == "__main__":
+    app.run()
+
+]]></content>
+	<tabTrigger>FlaskHello</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

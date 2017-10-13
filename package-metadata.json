@@ -1,0 +1,8 @@
+{
+    "version": "2017.10.13.07.57.49",
+    "platforms": ["*"],
+    "description": "Flask modern snippet for Sublime Text 3",
+    "dependencies": [],
+    "url": "https://github.com/tanrax/SublimeFlaskHello",
+    "sublime_text": ">=3000"
+}
