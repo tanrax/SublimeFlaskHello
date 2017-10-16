@@ -23,6 +23,6 @@ if __name__ == '__main__':
     app.run()
 
 ]]></content>
-	<tabTrigger>FlaskHello</tabTrigger>
+	<tabTrigger>flaskHello</tabTrigger>
 	<scope>source.python</scope>
 </snippet>
