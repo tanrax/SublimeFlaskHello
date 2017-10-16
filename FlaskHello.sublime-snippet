@@ -12,13 +12,13 @@ app.config['DEBUG'] = True
 
 
 # Views
-@app.route("/"${1:, methods=('GET', 'POST')})
+@app.route('/'${1:, methods=('GET', 'POST')})
 def index():
-    return ${2:render_template("${3:name}.html")}
+    return ${2:render_template('${3:name}.html')}
 
 
 # Run
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run()
 
 ]]></content>
