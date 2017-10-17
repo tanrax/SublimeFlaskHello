@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 # -*- coding: utf-8 -*-
-# Biblioteca
+# Librarys
 from flask import Flask${4:, render_template}
 
 # Variables
