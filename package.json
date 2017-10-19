@@ -4,5 +4,5 @@
     "description": "Flask modern snippet for Sublime Text 3",
     "dependencies": [],
     "url": "https://github.com/tanrax/SublimeFlaskHello",
-    "sublime_text": ">=3000"
+    "sublime_text": "*"
 }
