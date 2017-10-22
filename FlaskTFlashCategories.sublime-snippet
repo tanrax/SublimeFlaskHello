@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            <p class="${2:}{{ category }}">${1:}{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+{% endwith %}   
+]]></content>
+	<tabTrigger>flaskTFlashCategories</tabTrigger>
+	<scope>text.html</scope>
+</snippet>

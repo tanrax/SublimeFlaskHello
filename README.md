@@ -65,3 +65,31 @@ class MyTable(db.Model):
 if __name__ == "__main__":
     manager.run()
 ```
+
+## FlaskTFlash
+
+Snippet Flash message for Template
+
+```jinja
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            {{ message }}
+        {% endfor %}
+    {% endif %}
+{% endwith %}   
+```
+
+## FlaskTFlashCategories
+
+Snippet Flash message with categories for Template
+
+```jinja
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            <p class="{{ category }}">{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+{% endwith %}   
+```
