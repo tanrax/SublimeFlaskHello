@@ -36,6 +36,7 @@ Snippet for Model with: Flask-sqlalchemy, Flask-script and flask-migrate.
 # -*- coding: utf-8 -*-
 # Librarys
 from flask import Flask
+from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
@@ -60,7 +61,18 @@ class MyTable(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     column_text = db.Column(db.String(128))
     column_int = db.Column(db.Integer)
-	
+    created_at = db.Column(
+        db.DateTime, nullable=False, default=datetime.utcnow)
+    updated_at = db.Column(
+        db.DateTime, nullable=False, default=datetime.utcnow)
+    category_id = db.Column(
+        db.Integer, db.ForeignKey('category.id'), nullable=False)
+    category = db.relationship(
+        'Category', backref=db.backref('MyTable', lazy=True))
+
+    def __repr__(self):
+        return '<MyTable {0}>'.format(self.column_text)
+
 
 if __name__ == "__main__":
     manager.run()

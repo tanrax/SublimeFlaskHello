@@ -19,8 +19,3 @@
 	<tabTrigger>flaskTFlashCategories</tabTrigger>
 	<scope>text.html</scope>
 </snippet>
-{% endwith %}   
-]]></content>
-	<tabTrigger>FlaskTFlash</tabTrigger>
-	<scope>text.html</scope>
-</snippet>
