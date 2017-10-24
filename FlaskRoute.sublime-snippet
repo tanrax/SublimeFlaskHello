@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+@app.route('/'${1:, methods=(${2:'GET'}${3:, 'POST'})})
+def ${4:name}():
+    return ${5:render_template('${6:name}.html')}
+]]></content>
+	<tabTrigger>flaskRoute</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+# -*- coding: utf-8 -*-
+# Librarys
+from flask_wtf import FlaskForm
+from wtforms import StringField
+from wtforms.validators import DataRequired
+
+class MyForm(FlaskForm):
+    name = StringField('name', validators=[DataRequired()])
+    
+]]></content>
+	<tabTrigger>flaskWTForm</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

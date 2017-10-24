@@ -25,6 +25,8 @@ class ${2:MyTable}(db.Model):
     '''
     ${3:MyTable}
     '''
+    __tablename__ = '${3:name table database}'
+    
     id = db.Column(db.Integer, primary_key=True)
     ${4:column_text} = db.Column(db.String(128))
     ${5:column_int} = db.Column(db.Integer)
