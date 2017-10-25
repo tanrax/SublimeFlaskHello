@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
 # -*- coding: utf-8 -*-
 # Librarys
 from flask import Flask${4:, render_template}
@@ -12,7 +12,7 @@ app.config['DEBUG'] = True
 app.config['SECRET_KEY'] = 'secret'
 
 
-${4:app.config['SQLALCHEMY_DATABASE_URI'] = '${5:sqlite:///database.sqlite}'
+${5:app.config['SQLALCHEMY_DATABASE_URI'] = '${6:sqlite:///database.sqlite}'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 db.init_app(db)}
@@ -29,6 +29,6 @@ if __name__ == '__main__':
     app.run()
 
 ]]></content>
-	<tabTrigger>flaskHello</tabTrigger>
-	<scope>source.python</scope>
+    <tabTrigger>flaskHello</tabTrigger>
+    <scope>source.python</scope>
 </snippet>
