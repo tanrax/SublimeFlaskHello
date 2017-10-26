@@ -3,6 +3,7 @@
 # -*- coding: utf-8 -*-
 # Librarys
 from flask import Flask${4:, render_template}
+${5:from flask_sqlalchemy import SQLAlchemy}
 
 # Variables
 app = Flask(__name__)
@@ -14,8 +15,8 @@ app.config['SECRET_KEY'] = 'secret'
 
 ${5:app.config['SQLALCHEMY_DATABASE_URI'] = '${6:sqlite:///database.sqlite}'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
-db.init_app(db)}
+db = SQLAlchemy()
+db.init_app(app)}
 
 
 # Views
