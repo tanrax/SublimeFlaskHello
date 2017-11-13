@@ -13,10 +13,12 @@ app.config['DEBUG'] = True
 app.config['SECRET_KEY'] = 'secret'
 
 
-${5:app.config['SQLALCHEMY_DATABASE_URI'] = '${6:sqlite:///database.sqlite}'
+${5:
+app.config['SQLALCHEMY_DATABASE_URI'] = '${6:sqlite:///database.sqlite}'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy()
-db.init_app(app)}
+db.init_app(app)
+}
 
 
 # Views
