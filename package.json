@@ -1,5 +1,5 @@
 {
-    "version": "1.1.6",
+    "version": "1.1.7",
     "platforms": ["*"],
     "description": "Flask modern snippet for Sublime Text 3",
     "dependencies": [],
